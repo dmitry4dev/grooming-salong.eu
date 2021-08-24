@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="../app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="../app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+      <div class="popup-container">
+        <div class="popup">
+          <h3 class="popup__title">Цены и услуги</h3>
+
+          <button class="popup__btn" type="button" name="button"></button>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Собаки</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first" scope="col">Услуги</th>
+
+                <th class="popup-table__header" scope="col">Собаки до 5 кг
+                  <span class="popup-table__header--mini"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Собаки до 20 кг
+                  <span class="popup-table__header--medium"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Собаки 20 кг +
+                  <span class="popup-table__header--high"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Стрижка</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Тримминг</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+                <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Экспресс линька</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Тримминг без мытья</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+                <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Стрижка без мытья</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Мытьё и сушка</td>
+
+                <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+                <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Кошки</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Услуги</th>
+
+                <th class="popup-table__header" scope="col">
+                  <span class="popup-table__header--cat"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Стрижка без мытья</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Дополнительные услуги</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Услуги</th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first cellsize--second">Стрижка когтей</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Креативный груминг</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <span class="popup__subtext">Конечная цена зависит от состояния шерсти и поведения Вашего питомца.</span>
+        </div>
+      </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="../src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="меню">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#groomers-anchor">Наши мастера</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Цены и услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#info-anchor">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#contact-anchor">Контакт</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--rus" href="#"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--est" href="../reeglid.html"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--eng" href="../en/rules.html"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="rules">
+        <h1 class="rules__title title--2">Правила перед посещением салона</h1>
+
+        <div class="rules-wrapper fixed-container">
+          <ul class="rules-list ul-reset">
+            <li class="rules-list__item">
+              НЕ КОРМИТЬ.
+              Нельзя кормить питомца минимум за 2 часа до стрижки. С набитым животиком, тяжко переносить все манипуляции с телом, к тому же, может случиться конфуз и время груминга может значительно увеличиться.
+            </li>
+
+            <li class="rules-list__item">
+              ВЫГУЛЯЙ ПИТОМЦА.
+              Перед грумингом рекомендуется выгулять питомца , чтобы на столе он не вертелся из за того, что хочет в туалет.
+            </li>
+
+            <li class="rules-list__item">
+              ПИТОМЕЦ ЗАРАЖЕН ПАРАЗИТАМИ.
+              Если Вы не подозревали о существовании паразитов и это выяснилось во время стрижки, то питомец немедленно обрабатывается специальным шампунем (во избежание заражения других питомцев) и взимается дополнительная плата!
+            </li>
+
+            <li class="rules-list__item">
+              НЕ МЕТИТЬ ТЕРРИТОРИЮ.
+              Собакам запрещено метить территорию рядом с салоном и в самом помещении! Поэтому собачка должна быть на руках или на поводке до того как ее поставят на рабочий стол.
+            </li>
+
+            <li class="rules-list__item">
+              ЗДОРОВЫЙ И ВАКЦИНИРОВАННЫЙ.
+              В салоне обслуживаются только здоровые и вакцинированные животные.
+              <h3 class="rules-list__title title--3">Нельзя посещать салон, если питомец болеет или плохо себя чувствует! Если наблюдаются следующие симптомы:</h3>
+
+              <ul class="rules-sublist">
+                <li class="rules-sublist__item">рвота</li>
+
+                <li class="rules-sublist__item">понос</li>
+
+                <li class="rules-sublist__item">кашель</li>
+
+                <li class="rules-sublist__item">насморк</li>
+
+                <li class="rules-sublist__item">свежие раны</li>
+
+                <li class="rules-sublist__item">прочие тревожащие симптомы</li>
+              </ul>
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">Как вести себя в салоне :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Приходите в салон строго в назначенное время, не раньше и не позже! В салоне могут находиться разные породы собак, которым нельзя пересекаться.
+              Также Вы можете доставить неудобства как другим клиентам, так и мастерам. Мастеру нужно выделить время между стрижками на санобработку инструмента, столов, ванной, уборку рабочего места и перерыв на отдых.
+            </li>
+
+            <li class="rules-list__item">
+              Кошек следует приносить в сумках-переносках.
+            </li>
+
+            <li class="rules-list__item">
+              Не надо в салон приходить всей семьей для просмотра процедуры, это небезопасно для питомца!
+              У грумера в руках очень острый инструмент, а собака реагирует на любое движение. Мастер не может предугадать движения всех присутствующих в салоне.
+              Особенно непредсказуемы и очень активны дети! К тому же не все процедуры приятны животным и будет достаточно сложно объяснить детям их необходимость.
+            </li>
+
+            <li class="rules-list__item">
+              При сдаче мастеру питомцы должны полностью контролироваться владельцами. Нельзя приходить с собаками без поводка, даже если они на руках!
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">Если вы хотите присутствовать при стрижке :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Не находиться в салоне с детьми.
+            </li>
+
+            <li class="rules-list__item">
+              Не ходить по салону.
+            </li>
+
+            <li class="rules-list__item">
+              Не издавать резких звуков.
+            </li>
+
+            <li class="rules-list__item">
+              Не входить резко.
+            </li>
+
+            <li class="rules-list__item">
+              Не отвлекать других питомцев, стригущихся в параллель с Вашим.
+            </li>
+
+            <li class="rules-list__item">
+              Входить в рабочую зону можно только по приглашению мастера, соблюдая правила безопасности и тишину.
+            </li>
+          </ul>
+
+          <span class="rules__subtext">Претензии по стрижке принимаются только в момент передачи Вам подстриженного питомца!</span>
+
+          <span class="rules__subtext rules__subtext--last">Если Вы не можете приехать на груминг в назначенное время – будем очень признательны, если Вы сообщите нам об этом как можно раньше.</span>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Наши партнёры</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#info-anchor">О нас</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Цены и услуги</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#groomers-anchor">Наши мастера</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#contact-anchor">Контакт</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="../app/js/libs-min.js"></script>
+  </body>
+</html>

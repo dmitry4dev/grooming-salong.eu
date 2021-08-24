@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="../app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="../app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <div class="popup-container">
+      <div class="popup">
+        <h3 class="popup__title">Цены и услуги</h3>
+
+        <button class="popup__btn" type="button" name="button"></button>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Собаки</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first" scope="col">Услуги</th>
+
+              <th class="popup-table__header" scope="col">Собаки до 5 кг
+                <span class="popup-table__header--mini"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Собаки до 20 кг
+                <span class="popup-table__header--medium"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Собаки 20 кг +
+                <span class="popup-table__header--high"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Стрижка</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Тримминг</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+              <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Экспресс линька</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Тримминг без мытья</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+              <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Стрижка без мытья</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Мытьё и сушка</td>
+
+              <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+              <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Кошки</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Услуги</th>
+
+              <th class="popup-table__header" scope="col">
+                <span class="popup-table__header--cat"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Стрижка без мытья</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Дополнительные услуги</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Услуги</th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first cellsize--second">Стрижка когтей</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Креативный груминг</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="popup__subtext">Конечная цена зависит от состояния шерсти и поведения Вашего питомца.</span>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="../src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="меню">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#groomers-anchor">Наши мастера</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Цены и услуги</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#info-anchor">О нас</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#contact-anchor">Контакт</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--rus" href="#"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--est" href="../index.html"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--eng" href="../en/index.html"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="tagline fixed-container">
+        <h1 class="tagline__title title">Комплексные услуги по уходу за домашними питомцами
+          <span class="tagline__title--subtext">стрижка - тримминг - уход за шерстью - экспресс линька</span>
+        </h1>
+      </section>
+
+      <section class="info main__info fixed-container flex-container">
+        <div class="wrapper">
+          <img class="wrapper__img" src="../src/img/york.jpg" alt="Йоркширский терьер">
+
+          <div class="info-wrapper">
+            <h2 id="info-anchor" class="info-wrapper__title title--2">О нас</h2>
+
+            <p class="info-wrapper__text">
+              <div class="info-wrapper__text visible-text">
+                Grooming Salong открыл свои двери в 2011 году, его основателем и владелицей стала <span class="info-wrapper__text--name">Инга Зенюк</span>. В настоящее время у нас сложился дружный коллектив из опытных мастеров, знающих и любящих свое дело.
+                Миссия наших мастеров заключается в постоянном обучении и повышении квалификации, доброжелательном отношении к клиентам и их четвероногим друзьям, учитывая индивидуальный подход к каждому.
+                Наша цель — здоровый красивый питомец , довольный клиент.
+              </div>
+              <a class="info-wrapper__text--hidden" href="#">Читать дальше</a>
+              <div class="info-wrapper__text hidden-text">
+                Grooming Salong предлагает комплекс услуг, включающий в себя мытье, стрижку машинкой и ножницами, тримминг, вычесывание колтунов, вычесывание подшерстка во время линьки, гигиена , стрижка ногтей, шоу груминг (подготовка к выставке), стрижка котов и др. Наши мастера постараются сделать визит Вашего питомца максимально приятным и безопасным, поэтому мы работаем только профессиональными стерилизованными инструментами, а также хозяин всегда может присутствовать во время стрижки, чтобы Вы лично могли убедиться в качестве обслуживания, особенно это касается первого посещения Вашего любимца в салон.
+                Удобное расположение и бесплатная парковка!
+              </div>
+            </p>
+
+            <span class="info-wrapper__text--part">Доверяя своего питомца нам Вы должны помнить — что он в надежных руках!</span>
+            <span class="info-wrapper__text--part2">Звоните и бронируйте время заранее!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="groomers main__groomers">
+        <h2 class="groomers__title title--2">Наши мастера</h2>
+
+        <div class="groomers__wrapper fixed-container flex-container">
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/inga.jpg" alt="Инга Зенюк">
+            </a>
+
+            <h3 id="groomers-anchor" class="groomers-article__title title--3">Инга Зенюк</h3>
+
+            <p class="groomers-article__text">
+              Грумер с 2011 года и основательница салона.
+              Обучение грумингу проходила в Москве. Специализация – декоративные породы в домашней стрижке.
+              Любит животных и все, что с ними связано. Владелица йоркширского терьера пет-класса.
+              Активно и постоянно развивает и улучшает свои навыки грумера.
+              Специализируется на груминге декоративных пород.
+            </p>
+
+            <span class="groomers-article__tel">+37258138039</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258138039">+37258138039</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">Смотреть мои работы на Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/svetlana.jpg" alt="Светлана Пугачёва">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Светлана Пугачёва</h3>
+
+            <p class="groomers-article__text">
+              Работает грумером с 2011 года.
+              Стрижка малых и средних пород. Предоставляет услуги по стрижке котов в салоне.
+              Владелец породы Вест Хайленд Вайт терьер и Цверг Шнауцер. Общительная и приветливая. Язык общения - русский, эстонский.
+            </p>
+
+            <span class="groomers-article__tel">+37256606005</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37256606005">+37256606005</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">Смотреть мои работы на Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/irina.jpg" alt="Ирина Виноградова">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Ирина Виноградова</h3>
+
+            <p class="groomers-article__text">
+              Владелица питомника WINZ SPRATE.
+              C 1992 заводчик и грумер американских кокерспаниэлей, с 1997г. заводчик цвергшнауцеров, с 2018г. заводчик грифонов.
+              Грумерскую карьеру начинала с салона "Шарм" в 1998г. Работала в салоне "Капи" и в лучшем из груминг-салонов Эспо “Magic Dog”.
+              Работает с породами 2,3,5,8,4 группы ФЦИ, метисами.
+              Среди клиентов много чемпионов международного класса в системе ФЦИ и ИКУ.
+              Основные породы по шоу-грумингу: терьеры, шнауцеры, спаниели, бернские овчарки.
+            </p>
+
+            <span class="groomers-article__tel">+37255650808</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37255650808">+37255650808</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">Смотреть мои работы на Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/olga.jpg" alt="Ольга Ломовцева">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Ольга Ломовцева</h3>
+
+            <p class="groomers-article__text">
+              Заводчик питомника AngelStone, ориентирующегося на Цвергщнауцерах и Ризеншнауцерах. Профессиональный грумер и хендлер.
+              С 2012 года стала одним из основных мастеров в нашем салоне. Также 4 года работала в лучшем салоне Эспо “Magic Dog”. Обучалась у именитых мастеров Европы и России.
+              Занимается выставочным грумингом всех Шнауцеров, Шпицев, Джек Рассел Терьерами, Бернскими овчарками.
+              Предоставляет салонный груминг для жесткошерстных и стригущихся пород.
+            </p>
+
+            <span class="groomers-article__tel">+37258366233</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258366233">+37258366233</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">Смотреть мои работы на Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/olga.nikitinskaja/media_set?set=a.650572868292329&type=3" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/olga_kraskova.jpg" alt="Ольга Краскова-Никитинская">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Ольга Краскова-Никитинская</h3>
+
+            <p class="groomers-article__text">
+              Заводчик профессионального питомника LEGENDOL (цвергшнауцеры и пудели)ю
+              Груминг с 2000 года.
+              Подготовка к выставкам следующие породы: Пудели, шнауцеры, бишон фризе, папильон. Грифоны, шпицы, вест хайленд вайт терьер.
+              Пет груминг: керри блю терьер, вест хайленд вайт терьер, ши-тцу, йоркширский терьер, шнауцеры, спаниели, грифоны, таксы.
+            </p>
+
+            <span class="groomers-article__tel">+37258122701</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258122701">+37258122701</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/olga.nikitinskaja/media_set?set=a.650572868292329&type=3" target="_blank">Смотреть мои работы на Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <h3 class="groomers-article__title title--3">Рабочий процесс</h3>
+
+            <iframe class="groomers-article__video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGroomingsalong%2Fvideos%2F1554336214645700%2F&show_text=0&width=560" allowFullScreen></iframe>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/Groomingsalong" target="_blank">Grooming Salong на Facebook</a>
+            </div>
+          </article>
+
+          <button class="groomers__btn" type="button" name="button">Смотреть цены</button>
+        </div>
+      </section>
+
+      <section class="contact main__contact">
+        <div class="flex-container fixed-container wrap">
+          <div class="contact__wrapper contact-wrapper">
+            <h2 id="contact-anchor" class="contact__title title--2">Контакт</h2>
+
+            <ul class="contact-wrapper__list ul-reset">
+              <li class="contact-wrapper__item">Адрес:
+                <span class="contact-wrapper__item--address">Кивимурру 45, 11411, Таллинн</span>
+              </li>
+
+              <li class="contact-wrapper__item">Инфо телефон:
+                <span class="contact-wrapper__item--tel">+37258138039</span>
+                <a class="contact-wrapper__item--mobile" href="tel:+37258138039">+37258138039</a>
+              </li>
+
+              <li class="contact-wrapper__item">Е-майл:
+                <a class="contact-wrapper__item--mail" href="mailto:info@grooming-salong.eu">info@grooming-salong.eu</a>
+              </li>
+
+              <li class="contact-wrapper__item">GROOMING SALONG OÜ</li>
+
+              <li class="contact-wrapper__item">reg. 12352170</li>
+            </ul>
+
+            <div class="contact-wrapper__widget">
+              <div class="fb-page" data-href="https://www.facebook.com/Groomingsalong" data-show-facepile="true" data-adapt-container-width="true" data-width="500" data-height="170"></div>
+            </div>
+          </div>
+
+          <div class="contact-map-wrapper">
+            <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.4430950545207!2d24.79301178192054!3d59.425684255077435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb555a1a3ec1%3A0xa161f7b6049ee7e1!2sKivimurru%2045%2C%2011411%20Tallinn!5e0!3m2!1sru!2see!4v1584447030705!5m2!1sru!2see" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Наши партнёры</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#info-anchor">О нас</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Цены и услуги</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#groomers-anchor">Наши мастера</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="pravila.html">Правила салона</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="../app/js/libs-min.js"></script>
+  </body>
+</html>

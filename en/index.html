@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="../app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="../app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <div class="popup-container">
+      <div class="popup">
+        <h3 class="popup__title">Prices and services</h3>
+
+        <button class="popup__btn" type="button" name="button"></button>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Dogs</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first" scope="col">Services</th>
+
+              <th class="popup-table__header" scope="col">Dogs up to 5 kg
+                <span class="popup-table__header--mini"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Dogs up to 20 kg
+                <span class="popup-table__header--medium"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Dogs 20 kg +
+                <span class="popup-table__header--high"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Haircut</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Trimming</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+              <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Express molt</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Trimming without washing</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+              <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Haircut without washing</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Washing and drying</td>
+
+              <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+              <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Cats</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Services</th>
+
+              <th class="popup-table__header" scope="col">
+                <span class="popup-table__header--cat"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Haircut without washing</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Additional services</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Services</th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first cellsize--second">Clipping</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Creative grooming</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="popup__subtext">The final price depends on the condition of the coat and the behavior of your pet.</span>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="../src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="menu">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#groomers-anchor">Our masters</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Prices and services</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#info-anchor">About us</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#contact-anchor">Contacts</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--eng" href="#"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--est" href="../index.html"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--rus" href="../ru/index.html"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="tagline fixed-container">
+        <h1 class="tagline__title title">Comprehensive Pet Care Services
+          <span class="tagline__title--subtext">haircut - trimming - hair care - express molt</span>
+        </h1>
+      </section>
+
+      <section class="info main__info fixed-container flex-container">
+        <div class="wrapper">
+          <img class="wrapper__img" src="../src/img/york.jpg" alt="Yorkshire terrier">
+
+          <div class="info-wrapper">
+            <h2 id="info-anchor" class="info-wrapper__title title--2">About us</h2>
+
+            <p class="info-wrapper__text">
+              <div class="info-wrapper__text visible-text">
+                Grooming Salong opened its doors in 2011.<span class="info-wrapper__text--name"> Inga Zenyuk</span> became its founder and owner. Currently, we have formed a friendly team of experienced craftsmen who know and love their job.
+                The mission of our masters is to constantly train and improve their skills, to be friendly to clients and their four-legged friends, taking into account the individual approach to each.
+                Our goal is a healthy beautiful pet and a satisfied customer.
+              </div>
+              <a class="info-wrapper__text--hidden" href="#">Read more</a>
+              <div class="info-wrapper__text hidden-text">
+                Grooming Salong offers a range of services, including washing, hairut with a clipper and scissors, trimming, combing the matted coat out, combing out the undercoat during molting, hygiene grooming, basic pet-grooming, show grooming (preparation for the dog shows), grooming for cats, etc.
+                Our masters will try to make a visit of Your pet is as pleasant and safe as possible, therefore we work only with professional sterilized instruments, and the owner can always be present during the haircut so that you can personally see the quality of service, especially when it comes to your pet’s first visit to the salon.
+                Convenient location and free parking!
+              </div>
+            </p>
+
+            <span class="info-wrapper__text--part">When trusting your pet to us, you must remember that your pet is in safe hands!</span>
+            <span class="info-wrapper__text--part2">Call and book your time in advance!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="groomers main__groomers">
+        <h2 class="groomers__title title--2">Our masters</h2>
+
+        <div class="groomers__wrapper fixed-container flex-container">
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/inga.jpg" alt="Inga Zenyuk">
+            </a>
+
+            <h3 id="groomers-anchor" class="groomers-article__title title--3">Inga Zenyuk</h3>
+
+            <p class="groomers-article__text">
+              Groomer since 2011 and the founder of the salon.
+              Grooming training took place in Moscow.
+              Specialization - decorative breeds in a home haircut. She loves animals and everything connected with them. The owner of the Yorkshire Terrier pet class.
+              Actively and constantly evolving and improving her grooming skills.
+              Works with decorative and miniature breeds.
+            </p>
+
+            <span class="groomers-article__tel">+37258138039</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258138039">+37258138039</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">View my works on Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/svetlana.jpg" alt="Svetlana Pugacheva">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Svetlana Pugacheva</h3>
+
+            <p class="groomers-article__text">
+              Has been working as a groomer since 2011.
+              Deals with the small and medium breeds. Provides cat-grooming in the salon.
+              The owner of the breed West Highland White Terrier and Miniature Schnauzer. Sociable and friendly. The language of communication is Russian, Estonian.
+            </p>
+
+            <span class="groomers-article__tel">+37256606005</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37256606005">+37256606005</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">View my works on Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/irina.jpg" alt="Irina Vinogradova">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Irina Vinogradova</h3>
+
+            <p class="groomers-article__text">
+              Owner of the kennel WINZ SPRATE.
+              Since 1992 became a  breeder and groomer of American Cockers, since 1997 breeder of miniature schnauzers, since 2018 breeder of griffins.
+              She began her groomer career at the “Sharm” salon in 1998. Worked in the “Kapi” salon. An in the best salon of Espoo “Magic Dog”.
+              Works with breeds 2nd, 3rd, 5th, 8th, 4th of the FCI groups and crossbreeded dogs.
+              Among her clients there are many world-class champions in the FCI and IKU systems.
+              The main breeds for showgrooming are Terrier breeds, Schnauzers, Spaniels, Bernese Shepherds.
+            </p>
+
+            <span class="groomers-article__tel">+37255650808</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37255650808">+37255650808</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">View my works on Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/olga.jpg" alt="Olga Lomovtseva">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Olga Lomovtseva</h3>
+
+            <p class="groomers-article__text">
+              Owner of AngelStone kennel basing on a Miniature Schnauzers and Giant Schnauzers. Professional groomer and handler.
+              Since 2012 became one of the main 4 masters in our salon. Also worked for 4 years in the best grooming salon in Espoo “Magic Dog”.
+              Studied with eminent masters of Europe and Russia.
+              Specializes in a show-grooming on all Schnauzer breeds, Spitz breeds, Jack Russel Terriers and Bernese Shepherds.
+              Provides a salon grooming for wirehaired and shearing breeds.
+            </p>
+
+            <span class="groomers-article__tel">+37258366233</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258366233">+37258366233</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">View my works on Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/olga.nikitinskaja/media_set?set=a.650572868292329&type=3" target="_blank">
+              <img class="groomers-article__img" src="../src/img/groomers/olga_kraskova.jpg" alt="Olga Kraskova-Nikitinskaya">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Olga Kraskova-Nikitinskaya</h3>
+
+            <p class="groomers-article__text">
+              Breeder of the professional kennel LEGENDOL (miniature schnauzers and poodles) Groomer since 2000.
+              Preparation for exhibitions of the following breeds: Poodles, Schnauzers, Bichon Frize, Papillons, Griffins, Spitz breeds, West Highland White Terriers.
+              Pet grooming: Kerry Blue Terriers, West Highland White Terriers, Shih Tzu, Yorkshire Terriers, Schnauzers, Griffins, Spaniels, Dachshunds.
+            </p>
+
+            <span class="groomers-article__tel">+37258122701</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258122701">+37258122701</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/olga.nikitinskaja/media_set?set=a.650572868292329&type=3" target="_blank">View my works on Facebook</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article article--last">
+            <h3 class="groomers-article__title title--3">Working process</h3>
+
+            <iframe class="groomers-article__video" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGroomingsalong%2Fvideos%2F1554336214645700%2F&show_text=0&width=560" allowFullScreen></iframe>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/Groomingsalong" target="_blank">Grooming Salong on Facebook</a>
+            </div>
+          </article>
+
+          <button class="groomers__btn" type="button" name="button">View prices</button>
+        </div>
+      </section>
+
+      <section class="contact main__contact">
+        <div class="flex-container fixed-container wrap">
+          <div class="contact__wrapper contact-wrapper">
+            <h2 id="contact-anchor" class="contact__title title--2">Contacts</h2>
+
+            <ul class="contact-wrapper__list ul-reset">
+              <li class="contact-wrapper__item">Address:
+                <span class="contact-wrapper__item--address">Kivimurru 45, 11411, Tallinn</span>
+              </li>
+
+              <li class="contact-wrapper__item">Info phone:
+                <span class="contact-wrapper__item--tel">+37258138039</span>
+                <a class="contact-wrapper__item--mobile" href="tel:+37258138039">+37258138039</a>
+              </li>
+
+              <li class="contact-wrapper__item">Mail:
+                <a class="contact-wrapper__item--mail" href="mailto:info@grooming-salong.eu">info@grooming-salong.eu</a>
+              </li>
+
+              <li class="contact-wrapper__item">GROOMING SALONG OÜ</li>
+
+              <li class="contact-wrapper__item">reg. 12352170</li>
+            </ul>
+
+            <div class="contact-wrapper__widget">
+              <div class="fb-page" data-href="https://www.facebook.com/Groomingsalong" data-show-facepile="true" data-adapt-container-width="true" data-width="500" data-height="170"></div>
+            </div>
+          </div>
+
+          <div class="contact-map-wrapper">
+            <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.4430950545207!2d24.79301178192054!3d59.425684255077435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb555a1a3ec1%3A0xa161f7b6049ee7e1!2sKivimurru%2045%2C%2011411%20Tallinn!5e0!3m2!1sru!2see!4v1584447030705!5m2!1sru!2see" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Our partners</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#info-anchor">About us</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Prices and services</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#groomers-anchor">Our masters</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="rules.html">Terms and policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="../app/js/libs-min.js"></script>
+  </body>
+</html>

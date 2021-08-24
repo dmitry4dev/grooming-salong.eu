@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="et" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+    <div class="popup-container">
+      <div class="popup">
+        <h3 class="popup__title">Hinnad ja teenused</h3>
+
+        <button class="popup__btn" type="button" name="button"></button>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Koerad</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first" scope="col">Teenused</th>
+
+              <th class="popup-table__header" scope="col">Koerad kuni 5 kg
+                <span class="popup-table__header--mini"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Koerad kuni 20 kg
+                <span class="popup-table__header--medium"></span>
+              </th>
+
+              <th class="popup-table__header" scope="col">Koerad 20 kg +
+                <span class="popup-table__header--high"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Lõikamine</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Trimmimine</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+              <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Ekspressvormimine</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Trimmimine ilma pesemiseta</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+              <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+              <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Juukselõikus ilma pesemiseta</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+              <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+              <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Pesemine ja kuivatamine</td>
+
+              <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+              <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+              <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Kassid</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Teenused</th>
+
+              <th class="popup-table__header" scope="col">
+                <span class="popup-table__header--cat"></span>
+              </th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Juukselõikus ilma pesemiseta</td>
+
+              <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="popup__table popup-table">
+          <caption class="popup-table__title">Lisateenused</caption>
+
+          <tbody class="popup-table__tbody">
+            <tr class="popup-table__row popup-table__row--header">
+              <th class="popup-table__header popup-table__header--first cellsize" scope="col">Teenused</th>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first cellsize--second">Küünise lõikamine</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+            </tr>
+
+            <tr class="popup-table__row">
+              <td class="popup-table__cell popup-table__cell--first">Loominguline trimmimine</td>
+
+              <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span class="popup__subtext">Lõplik hind sõltub karvkatte seisukorrast ja lemmiklooma käitumisest!</span>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="menü">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="#groomers-anchor">Meie meistrid</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Hinnad ja teenused</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#info-anchor">Meist</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#contact-anchor">Kontaktid</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--est"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--rus" href="./ru/index.html"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--eng" href="./en/index.html"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="tagline fixed-container">
+        <h1 class="tagline__title title">Põhjalikud lemmikloomade hooldamise teenused
+          <span class="tagline__title--subtext">masina ja kääridega lõikus - trimmimine - karvahooldus - ekspress hooldus</span>
+        </h1>
+      </section>
+
+      <section class="info main__info fixed-container flex-container">
+        <div class="wrapper">
+          <img class="wrapper__img" src="src/img/york.jpg" alt="yorkshire-terrier">
+
+          <div class="info-wrapper">
+            <h2 id="info-anchor" class="info-wrapper__title title--2">Meist</h2>
+
+            <p class="info-wrapper__text">
+              <div class="info-wrapper__text visible-text">
+                Grooming Salong avas oma uksed 2011. aastal, selle asutajaks ja omanikuks sai <span class="info-wrapper__text--name">Inga Zenyuk</span>. Praegu oleme moodustanud sõbraliku meeskonna kogenud meistridest, kes tunnevad ja armastavad oma tööd.
+                Meie meistrite missioon on pidevalt koolitada ja täiendada oma oskusi, olla sõbralik klientide ja nende neljajalgsete sõprade suhtes, võttes arvesse igaühe individuaalset lähenemist.
+                Meie eesmärk on tervislik ilus lemmikloom ja rahulolev klient.
+              </div>
+
+              <details class="info-wrapper__hidden-text" open>
+                <summary class="info-wrapper__hidden-title" tabindex="1">Loe rohkem</summary>
+                <p class="info-wrapper__text info-wrapper__hidden-part">Grooming Salong pakub mitmesuguseid teenuseid, sealhulgas pesemine, masina ja kääridega lõikamine, trimmimine, sassis karva kammimine, aluskihi kammimine vormimise ajal, hügieen, hooldus, näituse gruuming (näituseks ettevalmistamine), kasside gruuming jne. Meie meistrid võtavad Teie lemmikloomi vastu on võimalikult meeldiv ja ohutu, seetõttu töötame ainult professionaalsete steriliseeritud tööriistadega ja omanik võib juukselõikamise ajal alati kohal olla, et saaksite ise   näha teenuse kvaliteeti, eriti kui tegemist on teie lemmiklooma esmakordse salongi külastusega. Suurepärane asukoht ja tasuta parkimine!
+                </p>
+              </details>
+            </p>
+
+            <span class="info-wrapper__text--part">Kui usaldate oma lemmiklooma meile, peate meeles pidama, et teie lemmik on heades kätes!</span>
+            <span class="info-wrapper__text--part2">Helista ja broneeri aeg ette!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="groomers main__groomers">
+        <h2 class="groomers__title title--2">Meie meistrid</h2>
+
+        <div class="groomers__wrapper fixed-container flex-container">
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">
+              <img class="groomers-article__img" src="src/img/groomers/inga.jpg" alt="Inga-Zenjuk">
+            </a>
+
+            <h3 id="groomers-anchor" class="groomers-article__title title--3">Inga Zenyuk</h3>
+
+            <p class="groomers-article__text">
+              Gruumer alates 2011. aastast ja salongi asutaja.
+              Meistrikoolitus toimus Moskvas. Spetsialiseerumine - dekoratiivsed tõud kodus juukselõikus.
+              Ta armastab loomi ja kõike, mis nendega seotud on. Yorkshire terjerite lemmikloomaklassi omanik.
+              Aktiivselt ja pidevalt areneb ja täiendab oma gruumeri oskusi.
+              Spetsialiseerub dekoratiivsede tõugude gruumingus.
+            </p>
+
+            <span class="groomers-article__tel">+37258138039</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258138039">+37258138039</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=451625294916803" target="_blank">Vaadake minu töid Facebookis</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">
+              <img class="groomers-article__img" src="src/img/groomers/svetlana.jpg" alt="Svetlana-Pugatsova">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Svetlana Pugatšova</h3>
+
+            <p class="groomers-article__text">
+              Ta töötab gruumerina alates 2011. aastast.
+              Väikeste ja keskmiste tõugude grooming. Pakub salongis kasside gruumingi teenuseid.
+              West-Highlandi-White-Terrier ja kääbusšnautseri tõu omanik. Seltskondlik ja sõbralik. Suhtluskeel on vene ja eesti.
+            </p>
+
+            <span class="groomers-article__tel">+37256606005</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37256606005">+37256606005</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=456004131145586" target="_blank">Vaadake minu töid Facebookis</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">
+              <img class="groomers-article__img" src="src/img/groomers/irina.jpg" alt="Irina-Vinogradova">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Irina Vinogradova</h3>
+
+            <p class="groomers-article__text">
+              Kenneli WINZ SPRATE omanik. Alates 1992 Ameerika kokkerspanjeli kasvataja ja groomer, alates 1997 aastast kääbusšnautserite kasvataja.
+              Tema alustas gruumerite karjääri salongis Sharm 1998. aastal. Ta töötas Kapi salongis ja paremas Espoo salongis “Magic Dog”.
+              Töötab FCI rühma, tõugudega 2 ,3 ,5 ,8 ,4 rühmagruppis ja segaverelise koeradega.
+              Klientide hulgas on palju maailmatasemel võitjaid FCI ja IKU süsteemidel.
+              Peamised näituse tõud on kõik Terjerid, Šnautserid, Spanjelid, Berni lambakoerad.
+            </p>
+
+            <span class="groomers-article__tel">+37255650808</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37255650808">+37255650808</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/pg/Groomingsalong/photos/?tab=album&album_id=460294550716544" target="_blank">Vaadake minu töid Facebookisk</a>
+            </div>
+          </article>
+
+          <article class="groomers__article groomers-article">
+            <a href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">
+              <img class="groomers-article__img" src="src/img/groomers/olga.jpg" alt="Olga-Lomovceva">
+            </a>
+
+            <h3 class="groomers-article__title title--3">Olga Lomovtseva</h3>
+
+            <p class="groomers-article__text">
+              AngelStone kenneli kasvataja, keskendudes kääbusšnautseritele ja hiiglaslikele šnautseritele. Professionaalne groomer ja käitleja.
+              Alates 2012. aastast on temast saanud üks salongi peameistreid. Ta töötas 4 aastat ka Espoo Parimas salongis "Magic Dog". Ta õppis Euroopa ja Venemaa väljapaistvate meistrite juures.
+              Tegeleb kõigi šnautserite, Spitsi, Jack Russelli terjerite ja Berni lambakoerte näitusegruumingut.
+              Pakub salongihooldust traatjuukselise tõugutele ja tõugutele, mis nõuavad pügamist.
+            </p>
+
+            <span class="groomers-article__tel">+37258366233</span>
+
+            <a class="groomers-article__tel--mob" href="tel:+37258366233">+37258366233</a>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/olga.lomovtseva/media_set?set=a.522239654506040.1073741827.100001600290926&type=3" target="_blank">Vaadake minu töid Facebookis</a>
+            </div>
+          </article>
+
+
+
+          <article class="article-fullsize groomers-article">
+            <h3 class="groomers-article__title title--3">Tööprotsess</h3>
+
+            <iframe class="video-fullsize" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FGroomingsalong%2Fvideos%2F1554336214645700%2F&show_text=0&width=560" allowFullScreen></iframe>
+
+            <div class="groomers-wrapper">
+              <a class="groomers-article__link" href="https://www.facebook.com/Groomingsalong" target="_blank">Grooming Salong Facebookis</a>
+            </div>
+          </article>
+        </div>
+
+        <button class="groomers__btn" type="button" name="button">Vaata hinnad</button>
+      </section>
+
+      <section class="contact main__contact">
+        <div class="flex-container fixed-container wrap">
+          <div class="contact__wrapper contact-wrapper">
+            <h2 id="contact-anchor" class="contact__title title--2">Kontaktid</h2>
+
+            <ul class="contact-wrapper__list ul-reset">
+              <li class="contact-wrapper__item">Aadress:
+                <span class="contact-wrapper__item--address">Kivimurru 45, 11411, Tallinn</span>
+              </li>
+
+              <li class="contact-wrapper__item">Infotelefon:
+                <span class="contact-wrapper__item--tel">+37258138039</span>
+                <a class="contact-wrapper__item--mobile" href="tel:+37258138039">+37258138039</a>
+              </li>
+
+              <li class="contact-wrapper__item">E-mail:
+                <a class="contact-wrapper__item--mail" href="mailto:info@grooming-salong.eu">info@grooming-salong.eu</a>
+              </li>
+
+              <li class="contact-wrapper__item">GROOMING SALONG OÜ</li>
+
+              <li class="contact-wrapper__item">reg. 12352170</li>
+            </ul>
+
+            <div class="contact-wrapper__widget">
+              <div class="fb-page" data-href="https://www.facebook.com/Groomingsalong" data-show-facepile="true" data-adapt-container-width="true" data-width="500" data-height="170"></div>
+            </div>
+          </div>
+
+          <div class="contact-map-wrapper">
+            <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.4430950545207!2d24.79301178192054!3d59.425684255077435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692eb555a1a3ec1%3A0xa161f7b6049ee7e1!2sKivimurru%2045%2C%2011411%20Tallinn!5e0!3m2!1sru!2see!4v1584447030705!5m2!1sru!2see" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Meie partnerid</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#info-anchor">Meist</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Hinnad ja teenused</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="#groomers-anchor">Meie meistrid</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav-link" href="reeglid.html">Salongi reeglid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="app/js/libs-min.js"></script>
+  </body>
+</html>

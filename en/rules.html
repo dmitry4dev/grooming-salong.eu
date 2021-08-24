@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="../app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="../app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+      <div class="popup-container">
+        <div class="popup">
+          <h3 class="popup__title">Prices and services</h3>
+
+          <button class="popup__btn" type="button" name="button"></button>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Dogs</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first" scope="col">Services</th>
+
+                <th class="popup-table__header" scope="col">Dogs up to 5 kg
+                  <span class="popup-table__header--mini"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Dogs up to 20 kg
+                  <span class="popup-table__header--medium"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Dogs 20 kg +
+                  <span class="popup-table__header--high"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Haircut</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Trimming</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+                <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Express molt</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Trimming without washing</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+                <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Haircut without washing</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Washing and drying</td>
+
+                <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+                <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Cats</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Services</th>
+
+                <th class="popup-table__header" scope="col">
+                  <span class="popup-table__header--cat"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Haircut without washing</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Additional services</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Services</th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first cellsize--second">Clipping</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Creative grooming</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <span class="popup__subtext">The final price depends on the condition of the coat and the behavior of your pet.</span>
+        </div>
+      </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="../src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="меню">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#groomers-anchor">Our masters</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Prices and services</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#info-anchor">About us</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#contact-anchor">Contacts</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--eng" href="#"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--est" href="../reeglid.html"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--rus" href="../ru/pravila.html"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="rules">
+        <h1 class="rules__title title--2">Rules before visiting the salon</h1>
+
+        <div class="rules-wrapper fixed-container">
+          <ul class="rules-list ul-reset">
+            <li class="rules-list__item">
+              DO NOT FEED.
+              Do not feed your pet at least 2 hours before the haircut. With a full belly, it’s hard to endure all manipulations with the body, besides, inconvenient case could happen and the grooming time can be significantly increase.
+            </li>
+
+            <li class="rules-list__item">
+              WALK THE PET.
+              Before grooming, it is recommended to walk the pet, so that on the table he would not twiddle around because he wants to go to the toilet.
+            </li>
+
+            <li class="rules-list__item">
+              PET IS INFECTED WITH PARASITES.
+              If you did not suspect the parasites infection and this was found out during the haircut, then the pet is immediately treated with special shampoo (to avoid infection of other pets) and an additional charge will be charged!
+            </li>
+
+            <li class="rules-list__item">
+              DO NOT MARK THE AREA.
+              Dogs are prohibited from marking the area near the salon and in the room itself! Therefore, the dog must be on hand or on a leash before it is placed on the grooming table.
+            </li>
+
+            <li class="rules-list__item">
+              HEALTHY AND VACCINATED.
+              The pet salon only serve to healthy and vaccinated animals!
+              <h3 class="rules-list__title title--3">You can not visit the salon if the dog is sick or does not feel well. For example :</h3>
+
+              <ul class="rules-sublist">
+                <li class="rules-sublist__item">vomiting</li>
+
+                <li class="rules-sublist__item">diarrhea</li>
+
+                <li class="rules-sublist__item">cough</li>
+
+                <li class="rules-sublist__item">runny nose</li>
+
+                <li class="rules-sublist__item">fresh wounds</li>
+
+                <li class="rules-sublist__item">any other disturbing symptomes</li>
+              </ul>
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">How to behave in a pet salon :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Come to the salon strictly at the appointed time, not earlier and not later! In the salon there may be different breeds of dogs that should not interact with each other.
+              You can also cause inconvenience to both other customers and groomers. The master needs to allocate time between haircuts to sanitize the tool, tables, bathroom, cleaning the workplace and rest break.
+            </li>
+
+            <li class="rules-list__item">
+              Cats should be brought in carrying bags.
+            </li>
+
+            <li class="rules-list__item">
+              It is not necessary for the whole family to come to the salon to view the procedure, because it is unsafe for the pet. The groomer has a very sharp instrument in his hands, and the dog reacts to any movement. The master cannot predict the movements of all those present in the salon. Especially unpredictable and very active are children. In addition, not all procedures are pleasant for animals, and it will be difficult to explain their necessity to the kids.
+            </li>
+
+            <li class="rules-list__item">
+              Upon return to the owner, the pets must be fully controlled by the owners.
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">If you want to be present at grooming process :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Do not be in the cabin with children.
+            </li>
+
+            <li class="rules-list__item">
+              Do not walk around the cabin.
+            </li>
+
+            <li class="rules-list__item">
+              Do not make harsh sounds.
+            </li>
+
+            <li class="rules-list__item">
+              Do not enter suddenly.
+            </li>
+
+            <li class="rules-list__item">
+              Do not distract other pets, which are being served at the same time as yours.
+            </li>
+
+            <li class="rules-list__item">
+              You can enter the work area only at the invitation of the master, observing safety rules and silence.
+            </li>
+          </ul>
+
+          <span class="rules__subtext">Claims for haircuts are accepted at the time of transfer to you a trimmed pet!</span>
+
+          <span class="rules__subtext rules__subtext--last">If you cannot come for grooming at the appointed time, we will be very grateful if you let us know as soon as possible.</span>
+        </div>
+
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Our partners</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#info-anchor">About us</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Prices and services</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#groomers-anchor">Our masters</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#contact-anchor">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="../app/js/libs-min.js"></script>
+  </body>
+</html>

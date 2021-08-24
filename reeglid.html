@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="et" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Grooming Salong</title>
+    <link rel="shortcut icon" type="image/png" href="app/img/icon/favicon.ico">
+    <link rel="stylesheet" href="app/css/style.min.css">
+  </head>
+
+  <body>
+    <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v6.0"></script>
+
+      <div class="popup-container">
+        <div class="popup">
+          <h3 class="popup__title">Hinnad ja teenused</h3>
+
+          <button class="popup__btn" type="button" name="button"></button>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Koerad</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first" scope="col">Teenused</th>
+
+                <th class="popup-table__header" scope="col">Koerad kuni 5 kg
+                  <span class="popup-table__header--mini"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Koerad kuni 20 kg
+                  <span class="popup-table__header--medium"></span>
+                </th>
+
+                <th class="popup-table__header" scope="col">Koerad 20 kg +
+                  <span class="popup-table__header--high"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Lõikamine</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 70 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Trimmimine</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 65 &euro;</td>
+
+                <td class="popup-table__cell opacity">65 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Ekspressvormimine</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 75 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Trimmimine ilma pesemiseta</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+
+                <td class="popup-table__cell opacity">40 &euro; - 55 &euro;</td>
+
+                <td class="popup-table__cell opacity">55 &euro; - 65 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Juukselõikus ilma pesemiseta</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 35 &euro;</td>
+
+                <td class="popup-table__cell opacity">35 &euro; - 50 &euro;</td>
+
+                <td class="popup-table__cell opacity">50 &euro; - 60 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Pesemine ja kuivatamine</td>
+
+                <td class="popup-table__cell opacity">10 &euro; - 15 &euro;</td>
+
+                <td class="popup-table__cell opacity">15 &euro; - 25 &euro;</td>
+
+                <td class="popup-table__cell opacity">25 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Kassid</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Teenused</th>
+
+                <th class="popup-table__header" scope="col">
+                  <span class="popup-table__header--cat"></span>
+                </th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Juukselõikus ilma pesemiseta</td>
+
+                <td class="popup-table__cell opacity">30 &euro; - 40 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table class="popup__table popup-table">
+            <caption class="popup-table__title">Lisateenused</caption>
+
+            <tbody class="popup-table__tbody">
+              <tr class="popup-table__row popup-table__row--header">
+                <th class="popup-table__header popup-table__header--first cellsize" scope="col">Teenused</th>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first cellsize--second">Küünise lõikamine</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 10 &euro;</td>
+              </tr>
+
+              <tr class="popup-table__row">
+                <td class="popup-table__cell popup-table__cell--first">Loominguline trimmimine</td>
+
+                <td class="popup-table__cell opacity">5 &euro; - 20 &euro;</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <span class="popup__subtext">Lõplik hind sõltub karvkatte seisukorrast ja lemmiklooma käitumisest!</span>
+        </div>
+      </div>
+
+    <header class="header">
+      <div class="fixed-container flex-container center">
+        <a class="logo-wrapper" href="index.html">
+          <img class="header__logo" src="src/img/logo.png" alt="grooming-salong">
+        </a>
+
+        <button class="burger-icon" type="button" name="button" aria-label="menü">
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+
+          <span class="burger-icon__part" role="presentation"></span>
+        </button>
+
+        <nav class="header__nav">
+          <div class="header__nav--wrapper">
+            <ul class="nav nav--header ul-reset">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#groomers-anchor">Meie meistrid</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link nav__link--price" href="#">Hinnad ja teenused</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#info-anchor">Meist</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="index.html#contact-anchor">Kontaktid</a>
+              </li>
+
+              <li class="nav__item">
+                <ul class="language-list ul-reset">
+                  <li class="language-list__item language-list__item--first actvie-language">
+                    <a class="language-list__link language-list__link--est" href="#"></a>
+                  </li>
+
+                  <li class="language-list__item language-list__item--languages">
+                    <ul class="dropdown-menu ul-reset">
+                      <li class="language-list__item language-list__item--second">
+                        <a class="language-list__link language-list__link--rus" href="#"></a>
+                      </li>
+
+                      <li class="language-list__item">
+                        <a class="language-list__link language-list__link--eng" href="#"></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="rules">
+        <h1 class="rules__title title--2">Reeglid enne salongi külastamist</h1>
+
+        <div class="rules-wrapper fixed-container">
+          <ul class="rules-list ul-reset">
+            <li class="rules-list__item">
+              ÄRA SÖÖDA.
+              Ärge söödake oma lemmiklooma vähemalt 2 tundi enne juukselõikust. Täis kõhuga on raske kõiki kehaga manipuleerimist taluda, pealegi võib tekkida piinlikkust ja hoolitsemise aeg võib märkimisväärselt pikeneda.
+            </li>
+
+            <li class="rules-list__item">
+              JALUTAGE OMA LEMMIKLOOMAGA.
+              Enne peibutamist on soovitatav oma lemmikloom jalutada, et ta ei keerutaks laua peal, kuna soovib tualetti minna.
+            </li>
+
+            <li class="rules-list__item">
+              LEMMIKLOOM ON NAKATUNUD PARASIITIDEGA.
+              Kui te ei kahtlustanud parasiitide olemasolu ja see sai juukselõikuse käigus selgeks, ravitakse lemmiklooma kohe spetsiaalse šampooniga (teiste lemmikloomade nakatumise vältimiseks) ja selle eest võetakse lisatasu!
+            </li>
+
+            <li class="rules-list__item">
+              ÄRGE TERRITOORIUMI MÄRGIGA.
+              Koertel on keelatud salongi lähedal ja ruumis ise ala märgistada! Seetõttu peab koer enne töölauale asetamist olema käes või jalutusrihmal.
+            </li>
+
+            <li class="rules-list__item">
+              TERVISLIK JA VAKTSINEERITUD.
+              Salongis võetakse vastu ainult terveid ja vaktsineeritud loomi.
+              <h3 class="rules-list__title title--3">Te ei saa salongi külastada, kui lemmikloom on haige või ei tunne end hästi, kui täheldatakse järgmisi sümptomeid :</h3>
+
+              <ul class="rules-sublist">
+                <li class="rules-sublist__item">oksendamine</li>
+
+                <li class="rules-sublist__item">kõhulahtisus</li>
+
+                <li class="rules-sublist__item">köha</li>
+
+                <li class="rules-sublist__item">nohu</li>
+
+                <li class="rules-sublist__item">värsked haavad</li>
+
+                <li class="rules-sublist__item">muud häirivad sümptomid</li>
+              </ul>
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">Kuidas käituda salongis :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Tulge salongi rangelt määratud ajal, mitte varem ja mitte hiljem! Salongis võivad olla eri tõugu koerad, keda ei saa kohale ühes korras viia.Samuti võite põhjustada ebamugavusi nii teistele klientidele kui ka meistritele.
+              Meister peab tööriista, laudade, vannitoa desinfitseerimiseks, töökoha puhastamiseks ja puhkepausideks jaotamiseks aega teenuste vahel.
+            </li>
+
+            <li class="rules-list__item">
+              Kassid tuleks tuua kandekottides.
+            </li>
+
+            <li class="rules-list__item">
+              Protseduuri vaatamiseks ei pea tulema kogu perega salongi, see on lemmiklooma jaoks ohtlik!
+              Groomeril on käes väga terav inventar ja koer reageerib igale liigutusele. Meister ei suuda ette näha kõigi salongis viibijate liikumist.
+              Lapsed on eriti ettearvamatud ja väga aktiivsed! Lisaks pole kõik protseduurid loomadele meeldivad ja lastele on keeruline nende vajadust selgitada.
+            </li>
+
+            <li class="rules-list__item">
+              Lemmiklooma üleandmisel omanik kontrollib täielikult oma lemmiklooma käitumist! Koertega ei saa ilma jalutusrihmata tulla, isegi kui loom on Teie kätes!
+            </li>
+
+            <li class="rules-list__item">
+              <h3 class="rules-list__title title--3">Kui soovite hooldusprotsessi jälgida ja kohal olla :</h3>
+            </li>
+
+            <li class="rules-list__item">
+              Ärge tulge lastega salongis.
+            </li>
+
+            <li class="rules-list__item">
+              Ärge kõndige salongi ümber.
+            </li>
+
+            <li class="rules-list__item">
+              Ärge tehke karmi heli.
+            </li>
+
+            <li class="rules-list__item">
+              Ärge sisenege järsult või ootamatult.
+            </li>
+
+            <li class="rules-list__item">
+              Ärge juhtige teiste lemmikloomade tähelepanu, kes hooldatakse paralleelselt Teie lemmikloomaga.
+            </li>
+
+            <li class="rules-list__item">
+              Tööpiirkonda saab siseneda ainult meistri kutsel, järgides ohutuseeskirju ja vaikust.
+            </li>
+          </ul>
+
+          <span class="rules__subtext">Hoolduse kaebused võetakse vastu ainult pärast lemmiklooma ülekandmisel Teile!</span>
+
+          <span class="rules__subtext rules__subtext--last">Kui Te ei saa määratud ajal peibutamist tulla, oleme väga tänulikud, kui annate meile sellest esimesel võimalusel teada.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="fixed-container flex-container footer--center">
+        <div class="partners">
+          <h3 class="partners__title">Meie partnerid</h3>
+
+          <ul class="partners__list partner-list ul-reset">
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soposh" href="https://www.soposh.eu/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Soposh</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--eytk" href="http://www.yorkshireclub.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">E.Y.T.K</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--elit" href="http://www.eliitloomakliinik.ee/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Eliit-loomakliinik</span>
+            </li>
+
+            <li class="partners-list__item">
+              <a class="partner-list__link partner-list__link--soldog" href="https://www.solidis-dog.com/" target="_blank"></a>
+              <span class="partners-list__link--subtext">Solidis-Dog</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="social">
+          <a class="social-wrapper" href="https://www.instagram.com/inga_zenjuk/?r=nametag" target="_blank">
+            <div class="social__icon"></div>
+
+            <span class="social__text">Follow Us</span>
+          </a>
+        </div>
+
+        <nav class="footer__nav">
+          <ul class="nav nav--footer ul-reset">
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#info-anchor">Meist</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link nav__link--price" href="#">Hinnad ja teenused</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#groomers-anchor">Meie meistrid</a>
+            </li>
+
+            <li class="nav__item nav__item--footer">
+              <a class="nav__link" href="index.html#contact-anchor">Kontaktid</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <span class="footer__subtext">Since 2011</span>
+    </footer>
+
+    <script src="app/js/libs-min.js"></script>
+  </body>
+</html>
